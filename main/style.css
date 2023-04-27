@@ -1,115 +1,108 @@
 body {
-  margin: auto;
-  font-family: Impact, 'Arial Narrow Bold', sans-serif
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #f7f7f7;
 }
 
 header {
-  background-color: rgb(106, 0, 133);
-  color: rgb(43, 66, 100);
-  padding: 0;
-  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #005aab;
+  color: white;
+  padding: 1rem;
 }
 
 header h1 {
   margin: 0;
-  padding: 0;
 }
 
-header h2 {
-  margin: 0;
-  padding: 0;
+.search {
+  margin: 2rem;
 }
 
-aside {
-  font-size: 120%;
-}
-
-aside h3 {
-  font-size: 2.5rem;
-}
-
-aside div {
-  width: max-content;
-}
-
-aside div button {
-  width: max-content;
-}
-
-aside h4 {
-  font-size: 35px;
-}
-
-.container {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-#card-inline {
+.search form {
   display: flex;
+  align-items: center;
 }
 
-#card-center div {
-  display: flex;
-  background-color: #fff;
-  position: relative;
+.search label {
+  margin-right: 1rem;
 }
 
-button {
-  display: flex;
-  padding: 3%;
-  margin: 3%;
-  color: rgb(251, 251, 252);
-  background-color: rgb(83, 131, 153);
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+.search input[type="text"],
+.search button[type="submit"] {
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: none;
+  outline: none;
 }
 
-button:hover {
-  font-size: 98%;
-  font-weight: bolder;
-  color: rgb(47, 74, 87);
-  background-color: rgb(196, 195, 195);
-  box-shadow: 0 0 3px 3px rgb(92, 140, 212);
+.search input[type="text"] {
+  flex: 1;
 }
 
-.card-body {
+.search button[type="submit"] {
+  background-color: #005aab;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.search button[type="submit"]:hover {
+  background-color: #003e7d;
+}
+
+.history {
+  margin: 2rem;
+}
+
+.history button {
+  display: block;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: none;
+  outline: none;
+  background-color: #005aab;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.history button:hover {
+  background-color: #003e7d;
+}
+
+.current,
+.forecast {
+  margin: 2rem;
+}
+
+.column {
   display: flex;
   flex-direction: column;
-  position: relative;
-}
-
-.card-body p {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bolder;
-}
-
-.card-body div {
-  display: flex;
-}
-
-h3 {
-  background-color: rgb(152, 202, 250);
-}
-
-img {
-  width: 100px;
-}
-
-#flex {
-  display: flex;
-  padding: 0 4%;
-}
-
-#fiveDay {
-  width: 100%;
 }
 
 .row {
-  justify-content: space-evenly;
-}
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:
 
-.card-text {
-  flex-direction: column;
+  .card {
+    border: 1px solid #purple;
+    padding: 10px;
+  }
+    
+  #history-div button {
+    margin: 5px;
+    background-color: purple;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
 }
-
-.card-body h2 {
-  background-color: rgb(194, 152, 250);
